@@ -10,33 +10,83 @@
 
   <style>
     /* Navbar customization if needed */
-    /* Customize the overall navbar background */
+  /* Navbar Custom Styling */
 .navbar-custom {
-  background-color: #F2F2F2; /* Replace with your desired background color */
+  background: linear-gradient(135deg, #2d6a4f, #1b4332);
+  padding: 15px 0;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Customize the brand text */
-.navbar-custom .navbar-brand {
-  color: #038C25; /* Brand text color */
-  font-size: 2rem; /* Adjust the size as needed */
+/* Brand Logo */
+.navbar-brand {
+  font-size: 1.8rem;
   font-weight: bold;
-  transition: font-size 0.3s ease;
+  color: #fff !important;
 }
 
-/* Customize the navigation links */
-.navbar-custom .nav-link {
-  color: #038C25; /* Default link color */
-  font-size: 1.1rem; /* Adjust the size as needed */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff !important;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Hover Effects */
+.navbar-nav .nav-link:hover {
+  color: #ffdd57 !important;
+  transform: scale(1.1);
+}
+
+/* Navbar Toggler (for mobile view) */
+.navbar-toggler {
+  border: none;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Buttons (Login & Sign Up) */
+.custom-btn {
+  background: linear-gradient(135deg, #ffdd57, #ffaa00);
+  color: #212529 !important;
   font-weight: bold;
- 
+  border-radius: 25px;
+  padding: 8px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: none;
 }
 
-/* Change the nav link color on hover/focus */
-.navbar-custom .nav-link:hover,
-.navbar-custom .nav-link:focus {
-  color: #022a20; /* Color on hover or when focused */
+.custom-btn:hover {
+  background: linear-gradient(135deg, #ffaa00, #ff7700);
+  transform: scale(1.05);
 }
+
+.custom-btn:active {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .custom-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
     /* Hero Section Container */
     .hero-section {
   position: relative;
@@ -361,10 +411,12 @@ footer i:hover {
           <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-          <!-- Login & Signup Buttons -->
-          <div class="d-flex ms-3">
-            <a href="login.html" class="btn btn-outline-light me-2 btn-success">Login</a>
+         <!-- Login & Signup Buttons -->
+         <div class="d-flex ms-3">
+          <a href="login.html" class="btn custom-btn me-2">Login</a>
+          <a href="signup.html" class="btn custom-btn">Sign Up</a>
         </div>
+
       </div>
     </div>
   </nav>
